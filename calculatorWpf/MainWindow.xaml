@@ -24,5 +24,12 @@
         <TextBlock Name="ScreenTest"></TextBlock>
         <Button Grid.Column="0" Margin="2" Grid.Row="2" Background="Orange" Click="Button_7_Click">7</Button>
         <Button Grid.Column="1" Grid.Row="2" Background="CornflowerBlue" Click="Button_8_Click">8</Button>
+        
+        <Button Grid.Column="3" Grid.Row="2" Background="CornflowerBlue" Click="Button_minus_Click">-</Button>
+        <Button Grid.Column="4" Grid.Row="3" Background="orange" Click="Button_plus_Click">+</Button>
+        <Button Grid.Column="4" Grid.Row="4" Grid.RowSpan="2" Background="orange" Click="Button_equals_Click">=</Button>
+        <Button Grid.Column="0" Grid.Row="4" Grid.RowSpan="1" Background="orange" Click="Button_one_Click">1</Button>
+        <Button Grid.Column="1" Grid.Row="4" Grid.RowSpan="1" Background="orange" Click="Button_two_Click">2</Button>
+        <Button Grid.Column="2" Grid.Row="4" Grid.RowSpan="1" Background="orange" Click="Button_three_Click">3</Button>
     </Grid>
 </Window>
