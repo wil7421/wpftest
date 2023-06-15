@@ -98,6 +98,74 @@ namespace calculatorWpf
 
             }
         }
+        private void Button_nine_Click(object sender, RoutedEventArgs e)
+        {
+            this.ScreenTest.Text += "9";
+
+            double.TryParse(this.ScreenTest.Text, out var number);
+
+            if (HasTheUserPressedMinus || HasTheUserPressedPlus)
+            {
+                secondNumber = number;
+
+            }
+            else
+            {
+                firstNumber = number;
+
+            }
+        }
+        private void Button_five_Click(object sender, RoutedEventArgs e)
+        {
+            this.ScreenTest.Text += "5";
+
+            double.TryParse(this.ScreenTest.Text, out var number);
+
+            if (HasTheUserPressedMinus || HasTheUserPressedPlus)
+            {
+                secondNumber = number;
+
+            }
+            else
+            {
+                firstNumber = number;
+
+            }
+        }
+        private void Button_four_Click(object sender, RoutedEventArgs e)
+        {
+            this.ScreenTest.Text += "4";
+
+            double.TryParse(this.ScreenTest.Text, out var number);
+
+            if (HasTheUserPressedMinus || HasTheUserPressedPlus)
+            {
+                secondNumber = number;
+
+            }
+            else
+            {
+                firstNumber = number;
+
+            }
+        }
+        private void Button_six_Click(object sender, RoutedEventArgs e)
+        {
+            this.ScreenTest.Text += "6";
+
+            double.TryParse(this.ScreenTest.Text, out var number);
+
+            if (HasTheUserPressedMinus || HasTheUserPressedPlus)
+            {
+                secondNumber = number;
+
+            }
+            else
+            {
+                firstNumber = number;
+
+            }
+        }
         private void Button_8_Click(object sender, RoutedEventArgs e)
         {
             this.ScreenTest.Text += "8";
@@ -135,11 +203,11 @@ namespace calculatorWpf
 
         private void Button_equals_Click(object sender, RoutedEventArgs e)
         {
-           if (HasTheUserPressedMinus)
+            if (HasTheUserPressedMinus)
             {
                 this.ScreenTest.Text = (firstNumber - secondNumber).ToString();
             }
-           else if (HasTheUserPressedPlus)
+            else if (HasTheUserPressedPlus)
             {
                 this.ScreenTest.Text = (firstNumber + secondNumber).ToString();
 
